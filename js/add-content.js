@@ -1,8 +1,8 @@
 'user-strict';
 
 var today = new Date();
-// var hourNow = today.getHours();
-var hourNow = hour;
+var hourNow = today.getHours();
+// var hourNow = hour;
 var greeting;
 
 if (hourNow > 18 && hourNow <= 23) {
