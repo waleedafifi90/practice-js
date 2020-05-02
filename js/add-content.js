@@ -15,3 +15,25 @@ if (hourNow > 18 && hourNow <= 23) {
     greeting = 'Something went wrong!';
   }
 document.write('<h3>'+greeting+'</h3>');
+
+
+function userChoiceAndQuantity() {
+  var userOrder = prompt('Enter between house and hotel only?');
+  var item = '';
+
+  while( userOrder !== 'house' && userOrder !== 'hotel') {
+    userOrder = prompt('Enter between house and hotel only?');
+  }
+
+  var itemNumber = prompt('Enter the number?');
+
+  for (i = 0; i < itemNumber; i++) {
+    if (userOrder === 'house') {
+      item = item +'<img src="images/house.png" />';
+    } else if (userOrder === 'house') {
+      item = item +'<img src="images/hotel.png" />';
+    }
+  }
+  return item;
+
+}
